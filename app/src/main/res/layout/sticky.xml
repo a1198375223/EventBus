@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="git.starstudio.eventbus.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:text="测试"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/line1"
+        android:layout_below="@+id/textView">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="第一次"
+            android:id="@+id/button"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="第二次"
+            android:id="@+id/button2"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/button3"
+            android:text="第三次"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/line1"/>
+
+
+
+</RelativeLayout>
